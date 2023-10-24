@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestData>
+	<TestCase>
+		<Input>2 + -3 * (4 - 2)</Input>
+		<ExpectedResult>2+m3*(4-2)</ExpectedResult>
+	</TestCase>
+	<TestCase>
+		<Input>""</Input>
+		<ExpectedResult>""</ExpectedResult>
+	</TestCase>
+	<TestCase>
+		<Input>null</Input>
+		<ExpectedResult>null</ExpectedResult>
+	</TestCase>
+	<TestCase>
+		<Input>2 * (4 - 2)</Input>
+		<ExpectedResult>2*(4-2)</ExpectedResult>
+	</TestCase>
+	<TestCase>
+		<Input>-2 + 3 * (4 - 2)</Input>
+		<ExpectedResult>m2+3*(4-2)</ExpectedResult>
+	</TestCase>
+	<TestCase>
+		<Input>2 + 3 * (4 - 2)+</Input>
+		<ExpectedResult>2+3*(4-2)+</ExpectedResult>
+	</TestCase>
+	<TestCase>
+		<Input>2 + (-3) * (4 - (-2))</Input>
+		<ExpectedResult>2+(m3)*(4-(m2))</ExpectedResult>
+	</TestCase>
+	<TestCase>
+		<Input>2 + --3 * (4 - -(-2))</Input>
+		<ExpectedResult>2+-m3*(4-m(m2))</ExpectedResult>
+	</TestCase>
+</TestData>
+
